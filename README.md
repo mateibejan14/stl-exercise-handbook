@@ -7,3 +7,11 @@ In order to help build that intuition, we’ve decided it would be best to creat
 At the time the first version of this book was written (February 2021), most ofthe exercises come through either the assignments presented by professor Bogdan Alexe, Ph.D. (Faculty of Mathematics and Computer Science, Universityof Bucharest) to his students or Shai Ben-Davids,and Shai Shalev-Shwarzs,Un-derstanding  Machine  Learningand  Alon  Gonens,solutions  for  their  proposed exercises (note that I only took a few problems from there, which I consideredto have the most intuitive solutions). I did not consider it important to attribute the exercises and solutions totheir  respective  providers,  as  the  purpose  of  the  booklet  is  not  to  help  thecontributors  get  acknowledged,  but  to  help  other  computer  science  students study theoretical machine learning. 
 
 In the case the reader may have the resources and noble generosity to contribute, he may find the main.tex file in the source directory in this repository. Please do remember to update botht he LaTeX code and PDF documents, as well as provide additional resources such as images, if they are needed.
+
+## Contributors
+
+* Matei Bejan, University of Bucharest, Romania.
+* Marius Miculta-Campeanu, University of Bucharest, Romania.
+* Mereuta Stefan, University of Bucharest, Romania.
+* Andrei Manolache, University of Bucharest, Romania.
+* Rob van Gastel, Eindhoven University of Technology, Netherlands.
