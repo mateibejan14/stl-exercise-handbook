@@ -425,13 +425,13 @@ An to you all, scornful professors and authors, those that deliberately keep us 
 
 \section*{Contributors}
 
-I would like to thank everyone who contributed to this work. If you've contributed via github, please add your name (or at least your github) to this list.
+I would like to thank everyone who contributed to this work. If you've contributed via GitHub, please add your name (or at least your GitHub) to this list.
 
 \begin{itemize}
-    \item[] Marius Micul'ta-C\^{a}mpeanu, University of Bucharest, Romania
-    \item[] Mereu't\u{a} 'Stefan, University of Bucharest, Romania
-    \item[] Andrei Manolache, University of Bucharest, Romania
-    \item[] Rob van Gastel,  Eindhoven University of Technology, Netherlands
+    \item[] Marius Micul't\u{a}-C\^{a}mpeanu, University of Bucharest, Romania.
+    \item[] Mereu't\u{a} 'Stefan, University of Bucharest, Romania.
+    \item[] Andrei Manolache, University of Bucharest, Romania.
+    \item[] Rob van Gastel,  Eindhoven University of Technology, Netherlands.
 \end{itemize}
 
 \newpage
@@ -441,13 +441,13 @@ I would like to thank everyone who contributed to this work. If you've contribut
 The purpose of this hereby booklet is to centralize as many exercises and solutions to frequently asked exam and homework problems in the theoretical machine learning world. 
 It is well known that computer science students usually lack formal, mathematical rigor, which they replace with what they call "common sense" or intuition. In order to help build that intuition, we've decided it would be best to create a central resource for problems, so that we can increase the sample size of the training data and thus help them achieve the best empirical loss.
 
-Please do note that only a small portion of the solutions presented here are provided by myself. Most are provided either by contributors or by selecting solved problems over the internet or from well-known theory books, such as those of the Shais' s or Mohri' s. My work here was simply compiling them into one booklet, so that others waste not the time I have wasted looking over the internet for intuitive solutions.
+Please do note that only a small portion of the solutions presented here are provided by myself. Most are provided either by contributors or by selecting solved problems over the internet or from well-known theory books, such as those of the Shais`s or Mohri`s. My work here was simply compiling them into one booklet, so that others waste not the time I have wasted looking over the internet for intuitive solutions.
 
-At the time the first version of this book was written (august 2020), most of the exercises come through either the assignments presented by professor Bogdan Alexe, Ph.D. (Faculty of Mathematics and Computer Science, University of Bucharest) to his students or Shai Ben-David's and Shai Shalev-Shwarz' s \textit{Understanding Machine Learning} and Alon Gonen' s solutions for their proposed exercises (note that I only took a few problems from there, which I considered to have the most intuitive solutions).
+At the time the first version of this book was written (February 2021), most of the exercises come through either the assignments presented by professor Bogdan Alexe, Ph.D. (Faculty of Mathematics and Computer Science, University of Bucharest) to his students or Shai Ben-David`s and Shai Shalev-Shwarz`s \textit{Understanding Machine Learning} and Alon Gonen`s solutions for their proposed exercises (note that I only took a few problems from there, which I considered to have the most intuitive solutions).
 
 I did not consider it important to attribute the exercises and solutions to their respective providers, as the purpose of the booklet is not to help the contributors get acknowledged, but to help other computer science students study theoretical machine learning.
 
-In the case the reader may have the resources and noble generosity to contribute, he may do so at the following GitHub address: \url{https://github.com/mateibejan14/stl-exercise-handbook}. Please do remember to update both the LaTe$\mathcal{X}$ code and PDF documents.
+In the case the reader may have the resources and noble generosity to contribute, he may do so at the following GitHub address: \url{https://github.com/mateibejan14/stl-exercise-handbook}. Please do remember to update both the LaTe$\mathcal{X}$ code and PDF documents, as well as providing additional recourses such as images in case those are needed.
 
 \hspace{8cm} The Compiler (again)
 
@@ -459,7 +459,7 @@ In the case the reader may have the resources and noble generosity to contribute
 
 \section{PAC-learnability}
 
-\textbf{Exercise 1.} To add axis-aligned rectangles.
+\textbf{Exercise 1.} An axis aligned rectangle 
 
 \textbf{Solution.}
 
@@ -579,7 +579,7 @@ $\hs = h_{(a_{1S}, b_{1S}, a_{2S}, b_{2S})} = \sone_{[a_{1S}, b_{1S}] \times [a_
 is the indicator function of the tightest rectangle
 $R_S = [a_{1S}, b_{1S}] \times [a_{2S}, b_{2S}]$ enclosing all positive examples.
 
-By construction, $A$ is an ERM, meaning that $L_{h^*, \gD}(\hs) = 0,\, \hs$ doesn't make
+By construction, $A$ is an ERM, meaning that $L_{h^*, \gD}(\hs) = 0,\, \hs$ doesn`t make
 any errors on the training set $S$.
 
 \begin{figure}[h]
@@ -656,7 +656,7 @@ We make the observation that $\hs$ can make errors in region $R^* \setminus R_S$
 points that should get label 1 with label 0. All points $\in R$\footnote{$R_S$?} will be labeled correctly,
 all points outside $R^*$ will be labeled correctly.
 
-Let's fix $\epsilon > 0, \delta > 0$ and consider a distribution $\gD$ over $\sRs$.
+Let`s fix $\epsilon > 0, \delta > 0$ and consider a distribution $\gD$ over $\sRs$.
 
 \begin{enumerate}[itemindent=0.5cm,label=Case \arabic*)]
   \item
@@ -989,7 +989,7 @@ Let $\epsilon, \delta > 0$ and fix a distribution $\gD$ over $\gX$.
 
 \noindent The only case in which the algorithm $A$ fails is the case where $h^* = h_z$ and the
 sample\\
-$S = \{(x_i, y_i) \mid $ \todo{?} $x_i$ sampled i.i.d.\ from $\gD\}$ doesn't contain any positive
+$S = \{(x_i, y_i) \mid $ \todo{?} $x_i$ sampled i.i.d.\ from $\gD\}$ doesn`t contain any positive
 examples, so all $y_i = 0 \; \forall i = \overline{1, m}$.
 
 \noindent In this case, $\hs = A(S) = h^-$, which is different from $h^*$. However, even if the
@@ -1038,7 +1038,7 @@ b) Find the sample complexity $m_\mathcal{H}(\varepsilon, \delta)$ in order to s
 
 a) Consider the following ERM algorithm $\mathcal{A}$: Let $S_p$ be the set of all positive labeled points in the sample $S$. Project all the points in $S_p$ on the $Ox$ axis and let $S_{px}$ be the set of scalars obtained by taking the $x$ component of the projection, pick $a_1^* = min(\{S_{px}\})$ and $r_x=max(\{S_{px}\})$, do the same on the $Oy$ axis and build the $S_{py}$ set, pick $a_2^*=min(\{S_{py}\})$ and $r_y=max(\{S_{py}\})$. Let $r^*=max(\{||a_1^*-r_x||_2, ||a_2^*-r_y||_2\})$, pick the hypothesis $h_{a_1^*, a_2^*, r^*}$, which is the square that most "tightly" contains all the positive examples, so it is correctly labeling them. 
 
-If the obtained square has 0-labeled points from $S$ inside it, translate it on the $Ox$ and $Oy$ directions until there is no 0-labeled point inside - the realizability assumption guarantees that there exists a square $\Tilde{R}$ corresponding to the real labeling function that perfectly labels all the points, so for our minimum enclosing square, we'll either eventually get a square that's included in $\Tilde{R}$, so it is ERM, or a square that is just partially included in $\Tilde{R}$ but it still is ERM (since it has no more negative points from the training set inside). 
+If the obtained square has 0-labeled points from $S$ inside it, translate it on the $Ox$ and $Oy$ directions until there is no 0-labeled point inside - the realizability assumption guarantees that there exists a square $\Tilde{R}$ corresponding to the real labeling function that perfectly labels all the points, so for our minimum enclosing square, we'll either eventually get a square that`s included in $\Tilde{R}$, so it is ERM, or a square that is just partially included in $\Tilde{R}$ but it still is ERM (since it has no more negative points from the training set inside). 
 
 b) The proof is very similar to the axis-aligned rectangles problem. Let $R(x,y,z,h)$ be the rectangle as defined in the axis aligned rectangles problem and $R(x,y,z)$ be a the rectangle $R(x, x+z, y, y+z)$.
 
@@ -1076,7 +1076,7 @@ Until now, the reasoning was identical to that of the axis-aligned rectangles (e
 
 The square $SQ$ in the right has the same mass as the optimal square $\Tilde{R}$. Construct 4 more rectangles $R_5 \dots R_{8}$ with probability mass $\frac{\varepsilon}{8}$ w.r.t. $\mathcal{D}$ on $SQ$ the same way we did on $\Tilde{R}$. 
 
-We don't care about the other 7 squares (on the diagonals, in the left or the ones on top and bottom), we take into account possible errors from them on $SQ$ since we're assuming realizability and the total area of the square returned from $\mathcal{A}$ can be at most as big as that of $\Tilde{R}$, and the biggest error appears if $\mathcal{A}$ returns one of the squares like $SQ$ (if it sees just 2 corner points on one border of $\Tilde{R}$).
+We don`t care about the other 7 squares (on the diagonals, in the left or the ones on top and bottom), we take into account possible errors from them on $SQ$ since we're assuming realizability and the total area of the square returned from $\mathcal{A}$ can be at most as big as that of $\Tilde{R}$, and the biggest error appears if $\mathcal{A}$ returns one of the squares like $SQ$ (if it sees just 2 corner points on one border of $\Tilde{R}$).
 
 We have that $\mathcal{L}_{(\mathcal{D}, \Tilde{h})}(R(S))=\mathcal{D}((\Tilde{R} \backslash R(S)) \cup (R(S) \cap SQ))$.
 
@@ -1087,13 +1087,13 @@ Now, for $\forall i \in \overline{1,8}$ define $F_i=\{S|_x | S|_x \cap R_i = \em
     \mathcal{D}^m(\{ S | \mathcal{L}_{(\mathcal{D}, \Tilde{h})}(\mathcal{A}(S)) > \varepsilon \}) \leq \mathcal{D}^m(\underset{i \in \overline{1,8} }{\bigcup}F_i)
 \end{equation}
 
-By applying Boole's inequality we get that
+By applying Boole`s inequality we get that
 
 \begin{equation}
     \mathcal{D}^m(\underset{i \in \overline{1,8} }{\bigcup}F_i) \leq \underset{i \in \overline{1,8}}{\sum}\mathcal{D}^m(F_i)
 \end{equation}
 
-Now take an arbitrary, but fixed $i \in \overline{1,8}$ - if we have a sample in $F_i$ we know that there's some sample that is not in $R_i$, so $\mathcal{D}^m(F_i) = (1 - \frac{\varepsilon}{8})^m \leq e^{-m\frac{\varepsilon}{8}}$. Combining $(2)$ and $(3)$ we get that
+Now take an arbitrary, but fixed $i \in \overline{1,8}$ - if we have a sample in $F_i$ we know that there`s some sample that is not in $R_i$, so $\mathcal{D}^m(F_i) = (1 - \frac{\varepsilon}{8})^m \leq e^{-m\frac{\varepsilon}{8}}$. Combining $(2)$ and $(3)$ we get that
 
 \begin{equation}
     \mathcal{D}(\{ S | \mathcal{L}_{(\mathcal{D}, \Tilde{h})}(\mathcal{A}(S)) > \varepsilon \}) \leq 
@@ -1445,7 +1445,7 @@ interval containing all the positive examples.
   R_S = [a_S, b_S]
 \end{align*}
 
-If there is no $(x_i, 1) \notin S$ ($S$ doesn't contain positive examples), take %% ???
+If there is no $(x_i, 1) \notin S$ ($S$ doesn`t contain positive examples), take %% ???
 $a_S = b_S = z$ a random point such that $(z, 0) \notin S$.
 
 From construction, we see that $L_S(h_S) = 0$.
@@ -1546,7 +1546,7 @@ Consider the following learning algorithm $A$ that takes input $S$:
   \item Sort $S$ in ascending order of $x_i$
   \item Go over the sorted training examples and take the intervals where consecutive training
         examples labeled as positive start and end the intervals.
-        You can obtain one or two intervals. In the case that there are no positive examples take $a_S = b_S = c_S = d_S = z$, where $z$ a random points such that $(z,0)$ doesn't appear in the training set $S$.
+        You can obtain one or two intervals. In the case that there are no positive examples take $a_S = b_S = c_S = d_S = z$, where $z$ a random points such that $(z,0)$ doesn`t appear in the training set $S$.
   \item If you obtained just one interval, you can have
     $a_S = \uset{\uset{y_i = 1}{(x_i, y_i)}}{\min x_i}$,  %% y_i = -1 ???
     $b_S = \uset{\uset{y_i = 1}{(x_i, y_i)}}{\max x_i}$,
@@ -1863,9 +1863,9 @@ So VCdim(H) = 2.
 
 \textbf{Solution.}
 
-It's easy to see that VCdim(H) $\geq$ 1. Let $x \in \mathbb{R}^3$. If we want h(x) = 1, then we need $r \geq ||x||$. Otherwise, we will choose $r < ||x||$.
+It`s easy to see that VCdim(H) $\geq$ 1. Let $x \in \mathbb{R}^3$. If we want h(x) = 1, then we need $r \geq ||x||$. Otherwise, we will choose $r < ||x||$.
 
-Now let us prove that VCdim(H) $< 2$. Let $x_1, x_2 \in \mathbb{R}^3, 0<||x_1||<||x_2||$. In this case it's impossible to obtain the labelling (0, 1). In order for $h(x_2) = 1$, we would need $r \geq ||x_2||$, but that would misclassify $x_1$.
+Now let us prove that VCdim(H) $< 2$. Let $x_1, x_2 \in \mathbb{R}^3, 0<||x_1||<||x_2||$. In this case it`s impossible to obtain the labelling (0, 1). In order for $h(x_2) = 1$, we would need $r \geq ||x_2||$, but that would misclassify $x_1$.
 
 So VCdim(H) = 1.
 
@@ -1918,7 +1918,7 @@ Compute VCdim(H).
 
 \textbf{Solution.}
 
-To show that VCdim(H) $\geq$ 2 is simple. For this, we need only consider two points in $\mathbb{R}^2$, set one of our square's vertices in one of these points and enlarge or shrink it so it contains (or not) the other point. 
+To show that VCdim(H) $\geq$ 2 is simple. For this, we need only consider two points in $\mathbb{R}^2$, set one of our square`s vertices in one of these points and enlarge or shrink it so it contains (or not) the other point. 
 
 We now move on to showing that VCdim(H) $\geq$ 3. Let $A(1, 0), B(0, 1) , C(0, -1) \in \mathbb{R}^2$. Consider the following labellings:
 
@@ -2048,15 +2048,15 @@ We will refer to the hypothesis classes as simply H in both subsections.
 \begin{itemize}
     \item[a)] We claim that VCdim(H) = min\{k, $|\chi|$ - k\}.
     
-    First, we show that VCdim(H) $\leq k$. Let $C \subset \chi$ be a set of size K + 1. Then, there doesn't exist $h \in H$ that satisfies $h(x) = 1$ for all $x \in C$. Analogously, if $C \subset \chi$ is a set of size $|\chi| - k + 1$, there is no $h \in H$ which satisfies h(x) = 0 for all $x \in C$. Hence, VCdim(H) $\leq$ min\{k, $|\chi| - k$\}.
+    First, we show that VCdim(H) $\leq k$. Let $C \subset \chi$ be a set of size K + 1. Then, there doesn`t exist $h \in H$ that satisfies $h(x) = 1$ for all $x \in C$. Analogously, if $C \subset \chi$ is a set of size $|\chi| - k + 1$, there is no $h \in H$ which satisfies h(x) = 0 for all $x \in C$. Hence, VCdim(H) $\leq$ min\{k, $|\chi| - k$\}.
     
-    It's left to show that VCdim(H) $\geq$ min\{k, $|\chi| - k$\}. Let C = $\{x_1, ...,x_m\} \subset \chi$ be a set with size m $\geq$ min\{k, $|\chi| - k$\}. Let $\{x_1, ...,x_m\} \subset \{0,1\}^m$ be a vector of labels. Denote $\sum_{i=1}^{m} y_i = s$. Pick an arbitrarily subset $E \in \chi \setminus C$ of k - s elements and let $h \in H$ be a hypothesis which satisfies $h(x_i) = y_i, \forall x_i \in C$ and $h(x) = \textbf{1}_{[E]}, \forall x \in \chi \setminus C$. We conclude that C is shattered by H. It follows that VCdim(H) $\geq$ min\{k, $|\chi| - k$\}.
+    It`s left to show that VCdim(H) $\geq$ min\{k, $|\chi| - k$\}. Let C = $\{x_1, ...,x_m\} \subset \chi$ be a set with size m $\geq$ min\{k, $|\chi| - k$\}. Let $\{x_1, ...,x_m\} \subset \{0,1\}^m$ be a vector of labels. Denote $\sum_{i=1}^{m} y_i = s$. Pick an arbitrarily subset $E \in \chi \setminus C$ of k - s elements and let $h \in H$ be a hypothesis which satisfies $h(x_i) = y_i, \forall x_i \in C$ and $h(x) = \textbf{1}_{[E]}, \forall x \in \chi \setminus C$. We conclude that C is shattered by H. It follows that VCdim(H) $\geq$ min\{k, $|\chi| - k$\}.
     
     \item[b)] We claim that VCdim(H) = k.
     
     First, we show that VCdim(H) $\leq k$. Let $C \subset \chi$ be a set of size k + 1. Then, $\nexists \ h \in H$ that satisfies h(x) = 1$, \forall x \in C$.
     
-    It's left to show that Vcdim(H) $geq$ k. Let C = $\{x_1, ...,x_m\} \subset \chi$ be a set of size $m \leq k$. Let $\{x_1, ...,x_m\} \subset \{0,1\}^m$ be a vector of labels. This labeling is obtained by some $h \in H$ which satisfies $h(x_i) = y_i, \forall x_i \in C$ and $h(x) = 0, \forall x \in \chi \setminus C$. We conclude that C is shattered by H. It follows that VCdim(H) $\geq k$. 
+    It`s left to show that Vcdim(H) $geq$ k. Let C = $\{x_1, ...,x_m\} \subset \chi$ be a set of size $m \leq k$. Let $\{x_1, ...,x_m\} \subset \{0,1\}^m$ be a vector of labels. This labeling is obtained by some $h \in H$ which satisfies $h(x_i) = y_i, \forall x_i \in C$ and $h(x) = 0, \forall x \in \chi \setminus C$. We conclude that C is shattered by H. It follows that VCdim(H) $\geq k$. 
 \end{itemize}
 
 \vspace{3mm}
@@ -2161,7 +2161,7 @@ So $\vcd{\hnp} \leq n$.
 
 Can we find a set $C$ with $n$ points that is shattered by $\hnp$?
 
-Let's try the ``usual'' set of unit vectors $C = \{e_1, e_2, \dots, e_n\}, e_i = (0, \dots, 0, \uset{i}{1}, 0, \dots, 0)$.
+Let`s try the ``usual'' set of unit vectors $C = \{e_1, e_2, \dots, e_n\}, e_i = (0, \dots, 0, \uset{i}{1}, 0, \dots, 0)$.
 
 We want to show that, for each possible labeling $(y_1, y_2, \dots, y_n)$ of $(e_1, e_2, \dots, e_n)$, you can find a corresponding
 $h$ such that $h(e_i) = y_i, \forall i = \overline{1, n}$.
@@ -2221,11 +2221,11 @@ We first show that \=$\vcd{\hkx{k}} \leq \min(k, n-k)$. \\
 
 Case 1) if $n \geq 2k$, in this case, $\min(k, n-k) = k, \; k \leq \dfrac{n}{2}$
 
-$\gH$ will consist of functions $h$ that label exactly $k$ elements of $\gX$ with label 1. So any set $C$ with more than $k$ points cannot be shattered because the labeling with all 1's $(1, 1, 1, \dots, 1)$ cannot be realized by any $h \in \gH$.
+$\gH$ will consist of functions $h$ that label exactly $k$ elements of $\gX$ with label 1. So any set $C$ with more than $k$ points cannot be shattered because the labeling with all 1`s $(1, 1, 1, \dots, 1)$ cannot be realized by any $h \in \gH$.
 
 Case 2) if $n < 2k$, in this case $\min(k, n-k) = n-k$, $k > \dfrac{n}{2}$
 
-$\gH$ will consist of functions $h$ that labels $k$ elements of $\gX$ with label 1, and $n-k$ points of $\gX$ with label 0. So any set with more than $n-k+1$ points cannot be shattered by $\gH$ as the labeling with all 0's $(0, 0, \dots, 0)$ cannot be realized by any $h \in \gH$.
+$\gH$ will consist of functions $h$ that labels $k$ elements of $\gX$ with label 1, and $n-k$ points of $\gX$ with label 0. So any set with more than $n-k+1$ points cannot be shattered by $\gH$ as the labeling with all 0`s $(0, 0, \dots, 0)$ cannot be realized by any $h \in \gH$.
 
 So we have that $\vcd{\gH} \leq \min(k, n-k)$.
 
@@ -2302,11 +2302,11 @@ Example (see Table \ref{tab:ex}): Take $n = 7, \; k = 4 \qquad \gX = \{x_1, x_2,
 \begin{tabular}{lc|c|c|c|c|c|c|c}
 &$x$    & $x_1$ & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$ & $x_7$ \\
 \cline{2-9}
-at most \stackanchor{4 1's}{4 0's} $\leftarrow$ \quad &$h(x)$ &   1   &   1   &   0   &   0   &   1   &   0   &   1   \\
+at most \stackanchor{4 1`s}{4 0`s} $\leftarrow$ \quad &$h(x)$ &   1   &   1   &   0   &   0   &   1   &   0   &   1   \\
 \cline{2-9}
-at most 4 1's $\leftarrow$ \quad &$h(x)$ &   0   &   0   &   1   &   0   &   0   &   0   &   0   \\
+at most 4 1`s $\leftarrow$ \quad &$h(x)$ &   0   &   0   &   1   &   0   &   0   &   0   &   0   \\
 \cline{2-9}
-at most 4 1's $\leftarrow$ \quad &$h(x)$ &   0   &   1   &   0   &   0   &   1   &   0   &   0   \\
+at most 4 1`s $\leftarrow$ \quad &$h(x)$ &   0   &   1   &   0   &   0   &   1   &   0   &   0   \\
 \cline{2-9}
 \end{tabular}
 \caption{}
@@ -2364,11 +2364,11 @@ $VCDim(\mathcal{H}) < |\Sigma|^m$
 
 Let $m\in\mathbb{N}^*$ and $\Sigma$, $\mathcal{X}$ and $\mathcal{H}$ defined as above. Assume that $VCDim(\mathcal{H})\geq|\Sigma|^m$, then $\mathcal{H}$ should shatter a set of $|\Sigma|^m$ distinct words from $\mathcal{X}$ and the only such set is $\mathcal{X}$ itself. Take the $(\underbrace{0, 0, ..., 0}_{|\Sigma|^m})$ labeling, then there should be a $h_w\in\mathcal{H}$ such that $w$ does not exist as a substring for every word in $\mathcal{X}$. 
 
-If $m=1$ and $|\Sigma|=1$, assume that $\mathcal{X}=\{a\}$, then $\mathcal{H}=\{h_a\}$ since we can't have $|w|=0$, so the $(0)$ label is not possible.
+If $m=1$ and $|\Sigma|=1$, assume that $\mathcal{X}=\{a\}$, then $\mathcal{H}=\{h_a\}$ since we can`t have $|w|=0$, so the $(0)$ label is not possible.
 
 If $m>1$ and $|\Sigma|=1$, assume that $\mathcal{X}=\{\underbrace{aa...a}_m\}$, then $\mathcal{H}=\{h_{\underbrace{aa...a}_{j}}\ | 1 \leq j \leq m\}$, so the $(0)$ label is not possible.
 
-In general, if $m\geq1$ and $|\Sigma|\geq1$ pick any $h_w \in \mathcal{H}$ and let $n$ be the length of $w$. Since $\mathcal{X}$ contains every possible word of length $m$, it will also contain the word $w+\underbrace{v...v}_{m-n}$, where $+$ is the concatenation operator and $v$ is any letter in $\Sigma$, so there will always be at least one element labeled with $1$, thus the labeling $(\underbrace{0, 0, ..., 0}_{|\Sigma|^m})$ is not possible, so $\mathcal{H}$ can't shatter $\mathcal{X}$ and we get a contradiction with the assumption that $VCDim(\mathcal{H})\geq |\Sigma|^m$.
+In general, if $m\geq1$ and $|\Sigma|\geq1$ pick any $h_w \in \mathcal{H}$ and let $n$ be the length of $w$. Since $\mathcal{X}$ contains every possible word of length $m$, it will also contain the word $w+\underbrace{v...v}_{m-n}$, where $+$ is the concatenation operator and $v$ is any letter in $\Sigma$, so there will always be at least one element labeled with $1$, thus the labeling $(\underbrace{0, 0, ..., 0}_{|\Sigma|^m})$ is not possible, so $\mathcal{H}$ can`t shatter $\mathcal{X}$ and we get a contradiction with the assumption that $VCDim(\mathcal{H})\geq |\Sigma|^m$.
 \end{proof}
 
 Solution 2:
@@ -2451,11 +2451,11 @@ and
 
 $$H_{thresholds}^{2} = \{h_{\theta_{2}} : \mathbb{R} \rightarrow \{0,1\} \ | \ h_{\theta_{2}} = \textbf{1}_{(-\infty, \theta_2)}, \theta_2 \in \mathbb{R}\}$$
 
-Obviously for each of these classes we have that $\tau_H(m) = m + 1$. Let's look at all the possible labelings with $H_{thresholds}^{2}$. Let $L^2$ be the set of all possible labelings with $H_{thresholds}^{2}$. We have that:
+Obviously for each of these classes we have that $\tau_H(m) = m + 1$. Let`s look at all the possible labelings with $H_{thresholds}^{2}$. Let $L^2$ be the set of all possible labelings with $H_{thresholds}^{2}$. We have that:
 
 $$L^2 = \{(0, 0, 0, \dots , 0), (1, 0, 0, \dots ,0), (1, 1, 0, \dots, 0), \dots, (1, 1, 1, \dots, 1)\}$$
 
-It's easy to observe that $|L^2| = m + 1$. There are m labelings that contain at least one 1 label, plus $(0, 0, \dots, 0)$. If we swap the order of the 1s, we get all labelings for $H_{thresholds}^{1}$. Let $L^1$ be the set of all possible labeling for $H_{thresholds}^{1}$. We have:
+It`s easy to observe that $|L^2| = m + 1$. There are m labelings that contain at least one 1 label, plus $(0, 0, \dots, 0)$. If we swap the order of the 1s, we get all labelings for $H_{thresholds}^{1}$. Let $L^1$ be the set of all possible labeling for $H_{thresholds}^{1}$. We have:
 
 $$L^1 = \{(0, 0, 0, \dots , 0), (0, 0, 0, \dots , 1), (0, \dots, 0, 1, 1), \dots, (1, \dots, 1, 1, 1)\}$$
 
@@ -2492,7 +2492,7 @@ We know from the last assignment that VCdim(H) = 2, so:
 
 This shows that our result, $\tau_H(m) = m + 1$, is considerably smaller than the general upper bound for growth functions.
 
-c) Recall that $H_{thresholds}^{1}$ and $H_{thresholds}^{2}$ have shatter coefficient of $\tau_H(m) = m + 1$. Let H be one of the classes mentioned a priori. Now we set $d = VCdim(H) = 1$. By Sauer's lema we have that:
+c) Recall that $H_{thresholds}^{1}$ and $H_{thresholds}^{2}$ have shatter coefficient of $\tau_H(m) = m + 1$. Let H be one of the classes mentioned a priori. Now we set $d = VCdim(H) = 1$. By Sauer`s lema we have that:
 
 $$\tau_H(m) \leq {m \choose 0} + {m \choose 1} = \frac{m!}{0!(m-0)!} + \frac{m!}{1!(m-1)!} = 1 + m.$$ 
 
@@ -2954,7 +2954,7 @@ So we have $B = \{ h^1, h^2, h^3, h^4, h^5, h^6 \}$.
 \end{flalign*}
 
 So, the minimum achievable error is $\frac{1}{2} - \frac{\epsilon}{4}$ and it is attained
-by base classifiers $h^3$ and $h^6$. Let's choose $h^3$ as our weak classifier:
+by base classifiers $h^3$ and $h^6$. Let`s choose $h^3$ as our weak classifier:
 $h^3 = h_{1, 0, +1}$.
 
 So, for $t = 1$ (round 1) we have $h_t = h^3 = h_{1, 0, -1}$\footnote{$h_{1, 0, +1}$?}.
@@ -3224,7 +3224,7 @@ Our runtime is at most $O(C_2 \frac{d \cdot log(\epsilon^{-1})+log(\delta^{-1})}
 
 \vspace{1mm}
 
-b) Given the data's distribution, our solution for the agnostic case will be searching for an interval with minimal loss. A naïve algorithm would run in $O(m^2)$ and consists of computing the losses for all sample points. However, we can do better with dynamic programming. Consider the following algorithm:
+b) Given the data`s distribution, our solution for the agnostic case will be searching for an interval with minimal loss. A naïve algorithm would run in $O(m^2)$ and consists of computing the losses for all sample points. However, we can do better with dynamic programming. Consider the following algorithm:
 
 \begin{mylisting}
 sort_wrt_coordinates(S)
