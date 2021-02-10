@@ -1,4 +1,4 @@
-# Statistical Learning TheoryExercise Handbook
+# Statistical Learning Theory Exercise Handbook
 
 The purpose of this hereby booklet is to centralize as many exercises and so-lutions  to  frequently  asked  exam  and  homework  problems  in  the  theoreticalmachine learning world.  It is well known that computer science students usu-ally  lack  formal,  mathematical  rigor,  which  they  replace  with  what  they  call ”common sense” or intuition.  
 
