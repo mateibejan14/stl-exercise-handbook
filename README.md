@@ -12,6 +12,6 @@ In the case the reader may have the resources and noble generosity to contribute
 
 * Matei Bejan, University of Bucharest, Romania.
 * Marius Miculta-Campeanu, University of Bucharest, Romania.
-* Mereuta Stefan, University of Bucharest, Romania.
+* Stefan Mereuta, University of Bucharest, Romania.
 * Andrei Manolache, University of Bucharest, Romania.
 * Rob van Gastel, Eindhoven University of Technology, Netherlands.
