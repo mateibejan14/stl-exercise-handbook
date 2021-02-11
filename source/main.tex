@@ -429,7 +429,7 @@ I would like to thank everyone who contributed to this work. If you've contribut
 
 \begin{itemize}
     \item[] Marius Micul't\u{a}-C\^{a}mpeanu, University of Bucharest, Romania.
-    \item[] Mereu't\u{a} 'Stefan, University of Bucharest, Romania.
+    \item[] 'Stefan Mereu't\u{a}, University of Bucharest, Romania.
     \item[] Andrei Manolache, University of Bucharest, Romania.
     \item[] Rob van Gastel,  Eindhoven University of Technology, Netherlands.
 \end{itemize}
@@ -459,7 +459,23 @@ In the case the reader may have the resources and noble generosity to contribute
 
 \section{PAC-learnability}
 
-\textbf{Exercise 1.} An axis aligned rectangle 
+\textbf{Exercise 1.} An axis aligned rectangle classifier in the plane
+is a classifier that assigns the value 1 to a point if and only if it is inside a certain rectangle. Formally, given real numbers $a_1 \leq b_1$, $a_2 \leq b_2$, define the classifier $h_{(a_1, b_1, a_2, b_2)}$ by:
+
+$$h_{(a_1, b_1, a_2, b_2)}(x_1, x_2) = 
+     \begin{cases}
+       1, & a1 \leq x_1 \leq b_1 \text{ and } a_2 \leq x_2 \leq b_2 \\
+       0, &\text{otherwise}
+     \end{cases}$$
+
+The class of axis-aligned rectangles in the plane is defined as:'
+
+$$\mathcal{H}^2_{rec} = \{h_{(a_1, b_1, a_2, b_2)} \ | \ a_1 \leq b_1, a_2 \leq b_2\}.$$
+
+\begin{itemize}
+    \item[a)] Prove that the class of axis-aligned rectangles is PAC-learnable and show that the learning algorithm provided is polynomial is \textit{d}, $1/\epsilon$ and in $\log(1/\delta)$.
+    \item[b)] Prove that the algorithm you provided at \textit{a)} has a sample complexity of $m_H(\epsilon, 1/\delta)$.
+\end{itemize}
 
 \textbf{Solution.}
 
